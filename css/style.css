@@ -489,6 +489,9 @@ article h3 {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.form-group .iti {
+  width: 100%;
+}
 .form-group input.error {
   border-color: #e53935;
 }
