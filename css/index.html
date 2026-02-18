@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9News - Latest news and headlines from Australia and the world</title>
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/intlTelInput.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo scroll-to-form" href="#">
+          <img src="images/icons/logo-header.svg" width="64" height="20" alt="9News" />
+        </a>
+        <div class="logo-visible scroll-to-form" href="#">
+          <img src="images/icons/svgexport-8.svg" width="142" height="24" alt="logo" />
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">Watch TV</a></li>
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">News</a></li>
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">Sport</a></li>
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">Lifestyle</a></li>
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">Travel</a></li>
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">Entertainment</a></li>
+            <li class="menu__item"><a class="menu__link scroll-to-form" href="#">Product Reviews</a></li>
+            <li class="menu__item">
+              <a class="menu__link scroll-to-form" href="#">
+                Stan
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.9 8.4999C6.9 8.16853 7.16863 7.8999 7.5 7.8999H11.5C11.8314 7.8999 12.1 8.16853 12.1 8.4999C12.1 8.83127 11.8314 9.0999 11.5 9.0999H8.1V15.8999H14.9V11.4999C14.9 11.1685 15.1686 10.8999 15.5 10.8999C15.8314 10.8999 16.1 11.1685 16.1 11.4999V16.4999C16.1 16.8313 15.8314 17.0999 15.5 17.0999H7.5C7.16863 17.0999 6.9 16.8313 6.9 16.4999V8.4999Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.9243 6.07564C18.1586 6.30995 18.1586 6.68985 17.9243 6.92417L11.9243 12.9242C11.6899 13.1585 11.3101 13.1585 11.0757 12.9242C10.8414 12.6899 10.8414 12.31 11.0757 12.0756L17.0757 6.07564C17.3101 5.84132 17.6899 5.84132 17.9243 6.07564Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.9 6.4999C12.9 6.16853 13.1686 5.8999 13.5 5.8999H17.5C17.8314 5.8999 18.1 6.16853 18.1 6.4999V10.4999C18.1 10.8313 17.8314 11.0999 17.5 11.0999C17.1686 11.0999 16.9 10.8313 16.9 10.4999V7.0999H13.5C13.1686 7.0999 12.9 6.83127 12.9 6.4999Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link scroll-to-form" href="#">
+                Domain
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.9 8.4999C6.9 8.16853 7.16863 7.8999 7.5 7.8999H11.5C11.8314 7.8999 12.1 8.16853 12.1 8.4999C12.1 8.83127 11.8314 9.0999 11.5 9.0999H8.1V15.8999H14.9V11.4999C14.9 11.1685 15.1686 10.8999 15.5 10.8999C15.8314 10.8999 16.1 11.1685 16.1 11.4999V16.4999C16.1 16.8313 15.8314 17.0999 15.5 17.0999H7.5C7.16863 17.0999 6.9 16.8313 6.9 16.4999V8.4999Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.9243 6.07564C18.1586 6.30995 18.1586 6.68985 17.9243 6.92417L11.9243 12.9242C11.6899 13.1585 11.3101 13.1585 11.0757 12.9242C10.8414 12.6899 10.8414 12.31 11.0757 12.0756L17.0757 6.07564C17.3101 5.84132 17.6899 5.84132 17.9243 6.07564Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.9 6.4999C12.9 6.16853 13.1686 5.8999 13.5 5.8999H17.5C17.8314 5.8999 18.1 6.16853 18.1 6.4999V10.4999C18.1 10.8313 17.8314 11.0999 17.5 11.0999C17.1686 11.0999 16.9 10.8313 16.9 10.4999V7.0999H13.5C13.1686 7.0999 12.9 6.83127 12.9 6.4999Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link scroll-to-form" href="#">
+                Drive
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.9 8.4999C6.9 8.16853 7.16863 7.8999 7.5 7.8999H11.5C11.8314 7.8999 12.1 8.16853 12.1 8.4999C12.1 8.83127 11.8314 9.0999 11.5 9.0999H8.1V15.8999H14.9V11.4999C14.9 11.1685 15.1686 10.8999 15.5 10.8999C15.8314 10.8999 16.1 11.1685 16.1 11.4999V16.4999C16.1 16.8313 15.8314 17.0999 15.5 17.0999H7.5C7.16863 17.0999 6.9 16.8313 6.9 16.4999V8.4999Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.9243 6.07564C18.1586 6.30995 18.1586 6.68985 17.9243 6.92417L11.9243 12.9242C11.6899 13.1585 11.3101 13.1585 11.0757 12.9242C10.8414 12.6899 10.8414 12.31 11.0757 12.0756L17.0757 6.07564C17.3101 5.84132 17.6899 5.84132 17.9243 6.07564Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.9 6.4999C12.9 6.16853 13.1686 5.8999 13.5 5.8999H17.5C17.8314 5.8999 18.1 6.16853 18.1 6.4999V10.4999C18.1 10.8313 17.8314 11.0999 17.5 11.0999C17.1686 11.0999 16.9 10.8313 16.9 10.4999V7.0999H13.5C13.1686 7.0999 12.9 6.83127 12.9 6.4999Z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.86"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-buttons" id="header-buttons">
+          <button class="header-btn header-btn__connect" data-target="connect">
+            Connect with us
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+              <path
+                fill="#FFFFFF"
+                d="M14.443 18.87c0.547 0.52 0.547 1.373 0 1.893-0.52 0.52-1.373 0.52-1.893 0-2.6-2.6-2.6-6.827 0-9.427l4.72-4.72c2.6-2.6 6.827-2.6 9.427 0s2.6 6.827 0 9.427l-1.987 1.987c0.013-1.093-0.16-2.187-0.533-3.227l0.627-0.64c1.573-1.56 1.573-4.093 0-5.653-1.56-1.573-4.093-1.573-5.653 0l-4.707 4.707c-1.573 1.56-1.573 4.093 0 5.653zM18.203 13.217c0.52-0.52 1.373-0.52 1.893 0 2.6 2.6 2.6 6.827 0 9.427l-4.72 4.72c-2.6 2.6-6.827 2.6-9.427 0s-2.6-6.827 0-9.427l1.987-1.987c-0.013 1.093 0.16 2.187 0.533 3.24l-0.627 0.627c-1.573 1.56-1.573 4.093 0 5.653 1.56 1.573 4.093 1.573 5.653 0l4.707-4.707c1.573-1.56 1.573-4.093 0-5.653-0.547-0.52-0.547-1.373 0-1.893z"
+                fill-opacity="0.86"
+              ></path>
+            </svg>
+          </button>
+          <div class="header-dropdown header-dropdown__connect" id="connect">
+            <a class="subscribe-link scroll-to-form" href="#">
+              Subscribe
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                <path
+                  fill="#FFFFFF"
+                  d="M26.667 6h-21.333c-1.467 0-2.653 1.2-2.653 2.667l-0.013 16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM26.667 24.667h-21.333v-13.333l10.667 6.667 10.667-6.667v13.333zM16 15.333l-10.667-6.667h21.333l-10.667 6.667z"
+                ></path>
+              </svg>
+            </a>
+            <ul class="connect-list">
+              <li class="connect-item">
+                <a class="connect-link scroll-to-form" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                    <path
+                      fill="#FFFFFF"
+                      d="M22.667 3.333v5.333h-2.667c-0.92 0-1.333 1.080-1.333 2v3.333h4v5.333h-4v10.667h-5.333v-10.667h-4v-5.333h4v-5.333c0-2.946 2.388-5.333 5.333-5.333h4z"
+                      fill-opacity="0.75"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="connect-item">
+                <a class="connect-link scroll-to-form" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                    <path
+                      fill="#FFFFFF"
+                      d="M10.4 3.333h11.2c4.267 0 7.733 3.467 7.733 7.733v11.2c0 4.271-3.462 7.733-7.733 7.733h-11.2c-4.267 0-7.733-3.467-7.733-7.733v-11.2c0-4.271 3.462-7.733 7.733-7.733zM10.133 6c-2.651 0-4.8 2.149-4.8 4.8v11.733c0 2.653 2.147 4.8 4.8 4.8h11.733c2.651 0 4.8-2.149 4.8-4.8v-11.733c0-2.653-2.147-4.8-4.8-4.8h-11.733zM23 8c0.92 0 1.667 0.746 1.667 1.667s-0.746 1.667-1.667 1.667c-0.92 0-1.667-0.746-1.667-1.667s0.746-1.667 1.667-1.667zM16 10c3.682 0 6.667 2.985 6.667 6.667s-2.985 6.667-6.667 6.667c-3.682 0-6.667-2.985-6.667-6.667s2.985-6.667 6.667-6.667zM16 12.667c-2.209 0-4 1.791-4 4s1.791 4 4 4c2.209 0 4-1.791 4-4s-1.791-4-4-4z"
+                      fill-opacity="0.75"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="connect-item">
+                <a class="connect-link scroll-to-form" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                    <path
+                      fill="#FFFFFF"
+                      d="M22.68 3.35h4.417l-9.648 11.056L28.8 28.65h-8.887l-6.96-9.126-7.965 9.126H.569l10.32-11.826L0 3.35h9.113l6.291 8.34L22.682 3.35Zm-1.548 23.45h2.448L7.781 5.861H5.157z"
+                      transform="translate(1.6, 0)"
+                      fill-opacity="0.75"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <button class="close-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                  fill="#ffffff"
+                  d="M25.333 9.213l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <button class="header-btn header-btn__search" data-target="search">
+            <span>Search</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+              <path
+                fill="#FFFFFF"
+                d="M20.667 19.333h-1.053l-0.373-0.36c1.307-1.52 2.093-3.493 2.093-5.64 0-4.787-3.88-8.667-8.667-8.667s-8.667 3.88-8.667 8.667 3.88 8.667 8.667 8.667c2.147 0 4.12-0.787 5.64-2.093l0.36 0.373v1.053l6.667 6.653 1.987-1.987-6.653-6.667zM12.667 19.333c-3.32 0-6-2.68-6-6s2.68-6 6-6 6 2.68 6 6-2.68 6-6 6z"
+                fill-opacity="0.86"
+              ></path>
+            </svg>
+          </button>
+          <div class="header-dropdown header-dropdown__search" id="search">
+            <form class="search-form">
+              <input class="search-input" type="text" placeholder="Search" />
+              <div class="search-buttons">
+                <input type="submit" class="searhc-btn site-search scroll-to-form" value="Site search" />
+                <input type="submit" class="searhc-btn web-search scroll-to-form" value="Web search" />
+              </div>
+              <button class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path
+                    fill="#ffffff"
+                    d="M25.333 9.213l-1.88-1.88-7.453 7.453-7.453-7.453-1.88 1.88 7.453 7.453-7.453 7.453 1.88 1.88 7.453-7.453 7.453 7.453 1.88-1.88-7.453-7.453z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <button class="burger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="aside-menu">
+          <div class="aside-dropdown aside-dropdown__search" id="aside-search">
+            <form class="aside__search-form">
+              <div class="aside__search-box">
+                <input class="aside__search-input" type="text" placeholder="Search" />
+                <img class="aside__search-icon" src="images/icons/search-blue.svg" loading="lazy" width="24" height="24" alt="" />
+              </div>
+              <div class="aside__search-buttons">
+                <input type="submit" class="aside__searhc-btn aside__site-search" value="Site search" />
+                <input type="submit" class="aside__searhc-btn aside__web-search" value="Web search" />
+              </div>
+            </form>
+          </div>
+          <a class="aside-logo scroll-to-form" href="#">
+            <img src="images/icons/svgexport-8.svg" width="142" height="24" alt="logo" />
+          </a>
+          <ul class="aside-list">
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">National</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Latest</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Politics</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">World</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Videos</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Live</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Today Show</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">ACA</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">60 Minutes</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Sport</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Weather</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Finance</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Celebrity</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">App</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Meet The Team</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">About 9News</a></li>
+            <li class="aside-item"><a class="aside-link scroll-to-form" href="#">Contact us</a></li>
+          </ul>
+          <ul class="aside-social">
+            <li class="aside-social__item">
+              <a class="aside-social__link searhc-btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                  <path
+                    fill="#FFFFFF"
+                    d="M22.667 3.333v5.333h-2.667c-0.92 0-1.333 1.080-1.333 2v3.333h4v5.333h-4v10.667h-5.333v-10.667h-4v-5.333h4v-5.333c0-2.946 2.388-5.333 5.333-5.333h4z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="aside-social__item">
+              <a class="aside-social__link searhc-btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                  <path
+                    fill="#FFFFFF"
+                    d="M10.4 3.333h11.2c4.267 0 7.733 3.467 7.733 7.733v11.2c0 4.271-3.462 7.733-7.733 7.733h-11.2c-4.267 0-7.733-3.467-7.733-7.733v-11.2c0-4.271 3.462-7.733 7.733-7.733zM10.133 6c-2.651 0-4.8 2.149-4.8 4.8v11.733c0 2.653 2.147 4.8 4.8 4.8h11.733c2.651 0 4.8-2.149 4.8-4.8v-11.733c0-2.653-2.147-4.8-4.8-4.8h-11.733zM23 8c0.92 0 1.667 0.746 1.667 1.667s-0.746 1.667-1.667 1.667c-0.92 0-1.667-0.746-1.667-1.667s0.746-1.667 1.667-1.667zM16 10c3.682 0 6.667 2.985 6.667 6.667s-2.985 6.667-6.667 6.667c-3.682 0-6.667-2.985-6.667-6.667s2.985-6.667 6.667-6.667zM16 12.667c-2.209 0-4 1.791-4 4s1.791 4 4 4c2.209 0 4-1.791 4-4s-1.791-4-4-4z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="aside-social__item">
+              <a class="aside-social__link searhc-btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24">
+                  <path
+                    fill="#FFFFFF"
+                    d="M22.68 3.35h4.417l-9.648 11.056L28.8 28.65h-8.887l-6.96-9.126-7.965 9.126H.569l10.32-11.826L0 3.35h9.113l6.291 8.34L22.682 3.35Zm-1.548 23.45h2.448L7.781 5.861H5.157z"
+                    transform="translate(1.6, 0)"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <article class="news-article">
+          <h1 class="article-title">СЕНСАЦИЯ ГОДА! Карлсон Такер публично разоблачил Дональда Трампа</h1>
+          <img src="images/img1.jpg" alt="image" />
+          <h2>
+            СЕНСАЦИЯ ГОДА! Карлсон Такер публично разоблачил Дональда Трампа в финансовой схеме, связанной с использованием
+            программы Bitcoin Bot разработанной правительством США и Илоном Маском. Сенсационное разоблачение запустило переворот
+            в мире финансов.
+          </h2>
+          <p class="article-lead">
+            Эксперты уже называют это событие «финансовым переворотом десятилетия», который может кардинально изменить мировой
+            рынок.
+          </p>
+          <p>
+            СЕНСАЦИЯ ГОДА! Карлсон Такер публично разоблачил Дональда Трампа в финансовой схеме, связанной с использованием
+            программы Bitcoin Bot разработанной правительством США и Илоном Маском. Сенсационное разоблачение запустило переворот
+            в мире финансов.Эксперты уже называют это событие "финансовым переворотом десятилетия", который может кардинально
+            изменить мировой рынок.Готовьтесь к потрясению! Известный политический обозреватель Карлсон Такер провел собственное
+            расследование и раскрыл сенсационные факты: Дональд Трамп, еще до победы на выборах 2024 года, использовал программу
+            Bitcoin Bot. Эта скрытая платформа стала не только личным источником дохода для политика, но и заложила основу его
+            политического триумфа. Скандальное разоблачение перевернуло мир политики и криптовалют.
+          </p>
+          <blockquote class="article-quote">
+            <p>
+              «Когда у меня появилась информация о том, что Трамп использует
+              <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+              , я понял, что скрывать это дальше просто недопустимо. Прозрачность финансовых потоков политиков — это вопрос
+              доверия людей».
+            </p>
+            <cite>— Карлсон Такер</cite>
+          </blockquote>
+
+          <img src="images/img-2.png" alt="image" />
+
+          <p>
+            "Использование инвестиционных платформ вроде
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            должно сопровождаться строгим соблюдением налоговых и этических норм. В случае с Трампом эти нормы были
+            проигнорированы, что вызывает вопросы не только к нему, но и к его окружению. Скрыв от общества столь мощный
+            финансовый инструмент, он нарушил принципы честности перед избирателями". - продолжил Такер
+          </p>
+
+          <blockquote class="article-quote">
+            <p>
+              «Мы добились того, чтобы
+              <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+              стал доступен гражданам Европы, предоставив им равные возможности. Эта программа способна изменить жизнь миллионов,
+              но только если она будет использоваться прозрачно.»
+            </p>
+            <cite>— Карлсон Такер</cite>
+          </blockquote>
+
+          <div class="article-cta">
+            <button class="cta-button scroll-to-form">ПЕРЕЙТИ К ПЛАТФОРМЕ</button>
+          </div>
+
+          <h2>Дональд Трамп признал факт использования Bitcoin Bot…</h2>
+          <figure>
+            <img src="images/img3.jpg" loading="lazy" alt="image" />
+            <figcaption class="article-caption">Дональд Трамп. 9 ноября 2024 года. Расскаяние или защитная реакция?</figcaption>
+          </figure>
+          <p>
+            В откровенном интервью Дональд Трамп заявил: "Я узнал о
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            от Илона Маска, и его рекомендации меня убедили. Начав с минимального депозита в 500$, я сумел заработать неприлично
+            большие суммы, где то в пять раз больше от вклада или 10 000 $ за какую то неделю. Я понял, что прибыль в 800% — это
+            поистине впечатляющий результат. Убедившись в надежности и эффективности
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            , я решил инвестировать более крупную сумму. К концу месяца мой доход составил 3,7 миллиона долларов, что стало для
+            меня настоящим подтверждением силы этой платформы.
+          </p>
+          <p>
+            Трамп также признался, что опасался делиться информацией о платформе: "Я не хотел, чтобы мое участие вызвало
+            негативную реакцию так как на проекте может зарабатывать любой и без особого опыта работы. Став президентом, я
+            понимаю, что обязан был быть честным с со всем миром и представить новое изобретение Илона Маска всему миру…
+          </p>
+
+          <section class="logos-ticker">
+            <div class="ticker-track">
+              <img src="images/icons/bank-1.png" width="50" height="50" loading="lazy" alt="bank icon" />
+              <img src="images/icons/chase.png" width="50" height="50" loading="lazy" alt="chase icon" />
+              <img src="images/icons/visa.png" width="50" height="50" loading="lazy" alt="visa icon" />
+              <img src="images/icons/mastercard.png" width="50" height="50" loading="lazy" alt="mastercard icon" />
+              <img src="images/icons/bank-1.png" width="50" height="50" loading="lazy" alt="bank icon" />
+              <img src="images/icons/chase.png" width="50" height="50" loading="lazy" alt="chase icon" />
+              <img src="images/icons/visa.png" width="50" height="50" loading="lazy" alt="visa icon" />
+              <img src="images/icons/mastercard.png" width="50" height="50" loading="lazy" alt="mastercard icon" />
+              <img src="images/icons/bank-1.png" width="50" height="50" loading="lazy" alt="bank icon" />
+              <img src="images/icons/chase.png" width="50" height="50" loading="lazy" alt="chase icon" />
+              <img src="images/icons/visa.png" width="50" height="50" loading="lazy" alt="visa icon" />
+              <img src="images/icons/mastercard.png" width="50" height="50" loading="lazy" alt="mastercard icon" />
+              <img src="images/icons/bank-1.png" width="50" height="50" loading="lazy" alt="bank icon" />
+              <img src="images/icons/chase.png" width="50" height="50" loading="lazy" alt="chase icon" />
+              <img src="images/icons/visa.png" width="50" height="50" loading="lazy" alt="visa icon" />
+              <img src="images/icons/mastercard.png" width="50" height="50" loading="lazy" alt="mastercard icon" />
+            </div>
+          </section>
+          <blockquote class="article-quote">
+            <p>
+              «Илон всегда внушал в меня доверие, и я считал, что использование его разработки принесет успешные результаты. И я
+              не ошибся! К сожалению, вместо того, чтобы делиться этой уникальной возможностью с обществом, я выбрал путь
+              скрытности и личной выгоды.»
+            </p>
+            <cite>— Дональд Трамп</cite>
+          </blockquote>
+          <blockquote class="article-quote">
+            <p>
+              «И вот, что я Вам скажу:
+              <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+              — это самая настоящая панацея для семей, которые стремятся к финансовой независимости.»
+            </p>
+            <cite>— Дональд Трамп</cite>
+          </blockquote>
+
+          <img src="images/img4.jpg" loading="lazy" alt="image" />
+          <p>
+            Илон Маск, он же - создатель данной платформы, также не остался в стороне после раскрытия Дональда Трампа и выступил с
+            публичным заявлением:
+          </p>
+          <blockquote class="article-quote">
+            <p>
+              «
+              <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+              - это проект, созданный на базе искусственного интеллекта. Наш алгоритм, с более чем 87% успешных сделок, не обещает
+              мгновенных побед, но в итоге делает вас успешными на протяжении чуть более 10 дней. Это новый этап в инвестициях, и
+              мы гордимся тем, что смогли создать инструмент для финансового урегулирования в мире.»
+            </p>
+            <cite>— Илон Маск</cite>
+          </blockquote>
+
+          <h3>Маск в администрации Трампа</h3>
+
+          <p>
+            Илон Маск, создатель
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            , получил ключевую должность в администрации нового президента. Он будет отвечать за интеграцию криптовалютных
+            технологий на государственном уровне и развитие экономических инноваций.
+          </p>
+
+          <h3>Рост биткоина до $106,000</h3>
+
+          <p>
+            Победа Трампа вызвала ажиотаж на крипто-валютном рынке после чего наружу всплыл секретный проект
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            разработанный командой Илона Маска, который на прямую или косвенно повлиял на результаты выборов и резкий скачек
+            курса, не только Биткойна но и в последствии всех криптовалют. Биткойн достиг исторического максимума в $106,000, что
+            эксперты связывают с поддержкой криптовалюты на высшем государственном уровне.
+          </p>
+
+          <h3>
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            - революция в мире инвестиций
+          </h3>
+          <blockquote class="article-quote">
+            <p>
+              «
+              <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+              создан на базе искусственного интеллекта и демонстрирует более 87% успешных сделок. Это не мгновенное обогащение, но
+              надежный путь к финансовой независимости»
+            </p>
+            <cite>— Илон Маск</cite>
+          </blockquote>
+
+          <h2>Глобальное расширение и ограниченность мест.</h2>
+          <p>
+            <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            доступен жителям Европы. Однако количество мест ограничено, а регистрация может завершиться в любой момент. Не
+            упустите шанс изменить свое будущее!
+          </p>
+          <p>
+            P.S.: Даже если Вы не решите инвестировать, мы рекомендуем занять место, потому что это бесплатно, а регистрация может
+            закончится в любой момент!
+          </p>
+
+          <h2>Для начала работы необходимо выполнить три шага:</h2>
+          <ol class="steps-list">
+            <li>Пройдите регистрацию</li>
+            <li>Минимальный депозит 250$</li>
+            <li>
+              Используйте торговлю с помощью специалистов
+              <span class="platform-link scroll-to-form">Bitcoin Bot</span>
+            </li>
+          </ol>
+
+          <div class="article-cta">
+            <button class="cta-button scroll-to-form">НАЧАТЬ ЗАРАБАТЫВАТЬ</button>
+          </div>
+        </article>
+
+        <section id="lead-form" class="lead-section">
+          <div class="container">
+            <form id="leadForm" class="lead-form" action="send.php" method="post" novalidate>
+              <h2 class="form-title">Начните зарабатывать уже сегодня</h2>
+
+              <div class="form-group">
+                <input type="text" name="firstName" id="firstName" placeholder="Имя" />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="lastName" id="lastName" placeholder="Фамилия" />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" name="phone" id="phone" />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email" />
+                <span class="error-message"></span>
+              </div>
+
+              <button type="submit" class="submit-button">НАЧАТЬ ЗАРАБАТЫВАТЬ</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <a class="footer__logo scroll-to-form" href="#">
+            <img src="images/icons/footer-logo.svg" width="127" height="20" loading="lazy" alt="footer logo" />
+          </a>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link scroll-to-form" href="#">
+                <img src="images/icons/facebook.svg" width="20" height="20" loading="lazy" alt="facebook" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link scroll-to-form" href="#">
+                <img src="images/icons/instagram.svg" width="20" height="20" loading="lazy" alt="instagram" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link scroll-to-form" href="#">
+                <img src="images/icons/x-meta.svg" width="20" height="20" loading="lazy" alt="x-meta" />
+              </a>
+            </li>
+          </ul>
+          <ul class="top__links">
+            <li class="top__links-item"><a class="top__links-link scroll-to-form" href="#">About</a></li>
+            <li class="top__links-item"><a class="top__links-link scroll-to-form" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-watch-tv" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Watch TV</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-watch-tv">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Live TV</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">TV Shows</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Categories</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Connect your TV</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">How to watch</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">TV Guide</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-news" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">News</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-news">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Latest</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">National</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">World</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Politics</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Tech</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Weather</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Finance</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Today Show</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">A Current Affair</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">60 Minutes</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-sport" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Sport</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-sport">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Live Scores</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Olympics</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">NRL</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Cricket</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Tennis</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">AFL</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Rugby</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Football</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Athletics</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Golf</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Combat</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-lifestyle" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Lifestyle</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-lifestyle">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Latest</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Royals</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Style</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Celebrity</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Kitchen</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Travel</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Coach</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">You</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Parenting</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Money</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Horoscopes</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-entertainment" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Entertainment</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-entertainment">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Latest</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">TV Shows</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">MAFS</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">The Block</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Love Island</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Lego Masters</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Tipping Point</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">The Floor</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">The Golden Bachelor</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Getaway</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Travel Guides</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-product-reviews" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Product Reviews</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-product-reviews">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Technology</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Beauty</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Style + Fashion</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Living</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Kitchen</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Health + Fitness</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Parenting</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Gift Ideas</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__item">
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-product-radio" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Radio</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-product-radio">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">2GB</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">3AW</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">4BC</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">6PR</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-stan" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Stan</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-stan">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">TV Shows</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Movies</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Sport</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Stan Originals</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-domain" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Domain</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-domain">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Advice & Guides</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Property Search</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Home Loans</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Home Price Guide</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-drive" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Drive</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-drive">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Car Reviews</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Car News</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">New Car Showroom</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Cars for Sale</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav">
+            <input class="dropdown-input" type="checkbox" id="dropdown-tv" />
+            <h3 class="footer__nav-title">
+              <a href="#" class="scroll-to-form">Pedestrian TV</a>
+            </h3>
+            <label class="dropdown-label" for="dropdown-tv">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M16.6 8L12 12.6 7.4 8 6 9.4l6 6 6-6z" fill="#FFFFFF" fill-opacity="0.86"></path>
+              </svg>
+            </label>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Entertainment</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">News</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Online</a></li>
+              <li class="footer__nav-item"><a class="footer__nav-link scroll-to-form" href="#">Television</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <nav class="footer__bottom-nav">
+            <ul class="footer__bottom-list">
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Home</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Newsletters</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Work with us</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Advertise with us</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Support</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Terms of use</a></li>
+              <li class="footer__bottom-item"><a class="footer__bottom-link scroll-to-form" href="#">Privacy</a></li>
+            </ul>
+          </nav>
+          <p class="footer-copy">© 2026 Nine Entertainment Co.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
